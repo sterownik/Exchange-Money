@@ -12,6 +12,16 @@
     <header>
         <p>Exchange money</p>
     </header>
+    <form id="form" onsubmit="return false;">
+        <input placeholder="1.222" type="number" id="ilosc" />
+        <div class="rodzaje">
+            <input placeholder="PLN,EUR..." maxlength="3" type="text" id="zjakiej" />
+            <img src="img/arrow.png" alt="">
+            <input placeholder="PLN,EUR..." maxlength="3" type="text" id="najaka" />
+        </div>
+        <input id="przycisk" type="submit" onclick="othername();" />
+    </form>
+    <script src="script.js"></script>
 </body>
 
 </html>
