@@ -102,12 +102,13 @@ div.rodzaje {
 
 div.rodzaje img {
     height: 5vh;
+    overflow: hidden;
     animation: ruch 2s both infinite;
 }
 
 @keyframes ruch {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-30%);
         opacity: 0;
     }
 
@@ -129,7 +130,7 @@ div.rodzaje img {
 
     100% {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(30%);
 
     }
 }
@@ -140,12 +141,14 @@ div.rodzaje img {
     font-size: 2.5vh;
     line-height: 5vh;
     text-align: center;
+    overflow: hidden;
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto;
 }
 
 #najaka {
     width: 36%;
+    overflow: hidden;
     height: 5vh;
     text-align: center;
     line-height: 5vh;
@@ -265,14 +268,43 @@ div.wynik p.kurs {
 @media (min-width:1024px) {
     header {
         margin: 5% 0;
-        height: 8vh;
+        height: 10vh;
     }
 
     header p {
-        line-height: 8vh;
-        font-size: 77px;
+        line-height: 10vh;
+        font-size: 60px;
 
 
+    }
+
+    @keyframes ruch {
+        0% {
+            transform: translateX(-70%);
+            opacity: 0;
+        }
+
+        13% {
+            opacity: 0;
+        }
+
+        14% {
+            opacity: 1;
+        }
+
+        86% {
+            opacity: 1;
+        }
+
+        87% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(70%);
+
+        }
     }
 
     #ilosc {}
@@ -314,6 +346,35 @@ div.wynik p.kurs {
         font-size: 47px;
 
 
+    }
+
+    @keyframes ruch {
+        0% {
+            transform: translateX(-80%);
+            opacity: 0;
+        }
+
+        13% {
+            opacity: 0;
+        }
+
+        14% {
+            opacity: 1;
+        }
+
+        86% {
+            opacity: 1;
+        }
+
+        87% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateX(80%);
+
+        }
     }
 
 
