@@ -38,7 +38,21 @@ header p {
 div.rodzaje {
     margin: 5% auto;
     display: flex;
+}
 
+#form {
+    margin: 30px auto 50px auto;
+}
+
+#przycisk {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    user-select: none;
+    text-align: center;
+    border: none;
+    line-height: 10vh;
+    cursor: pointer;
 }
 
 div.rodzaje img {
@@ -63,4 +77,18 @@ div.rodzaje img {
     background-color: rgba(255, 255, 255, 0.7);
     font-size: 3.5vh;
     margin: 0 auto;
+}
+
+div.wynik {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+div.wynik p {
+    font-size: 22px;
+    text-align: center;
+}
+
+div.wynik p.zwrot {
+    font-size: 28px;
+    text-align: center;
 }

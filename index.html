@@ -13,14 +13,58 @@
         <p>Exchange money</p>
     </header>
     <form id="form" onsubmit="return false;">
-        <input placeholder="1.222" type="number" id="ilosc" />
+        <input placeholder="Ile przeliczyć?" type="number" id="ilosc" />
         <div class="rodzaje">
-            <input placeholder="PLN,EUR..." maxlength="3" type="text" id="zjakiej" />
+
+            <input maxlength="3" placeholder="PLN,EUR..." type="text" list="typy" name="zjakiej" id="zjakiej">
             <img src="img/arrow.png" alt="">
-            <input placeholder="PLN,EUR..." maxlength="3" type="text" id="najaka" />
+
+            <input maxlength="3" placeholder="PLN,EUR..." type="text" list="typy" name="najaka" id="najaka">
+            <datalist id="typy">
+                <option value="CAD">
+                <option value="HKD">
+                <option value="ISK">
+                <option value="PHP">
+                <option value="DKK">
+                <option value="HUF">
+                <option value="CZK">
+                <option value="GBP">
+                <option value="RON">
+                <option value="SEK">
+                <option value="IDR">
+                <option value="INR">
+                <option value="BRL">
+                <option value="RUB">
+                <option value="HRK">
+                <option value="JPY">
+                <option value="THB">
+                <option value="CHF">
+                <option value="EUR">
+                <option value="MYR">
+                <option value="BGN">
+                <option value="TRY">
+                <option value="CNY">
+                <option value="NZD">
+                <option value="ZAR">
+                <option value="USD">
+                <option value="MXN">
+                <option value="SGD">
+                <option value="AUD">
+                <option value="ILS">
+                <option value="KRW">
+                <option value="PLN">
+            </datalist>
         </div>
-        <input id="przycisk" type="submit" onclick="othername();" />
+        <input id="przycisk" onclick="othername();" value="Oblicz" type="submit" />
+
     </form>
+    <div class="wynik">
+        <p>Otrzymasz:</p>
+        <p class="zwrot">...</p>
+        <p>Przeliczone z kursu:</p>
+        <p class="kurs">...</p>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
