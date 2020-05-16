@@ -4,8 +4,38 @@
     box-sizing: border-box;
 }
 
+div.wrapper {
+
+    flex-basis: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+div.reklama {
+    flex-basis: 10%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url(img/reklama.png);
+    background-size: contain;
+}
+
+div.reklama {
+    flex-basis: 10%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-image: url(img/reklama.png);
+    background-size: contain;
+}
+
+div.reklama2 {
+    background-position: center;
+    background-image: url(img/reklama2.png);
+
+}
+
 body {
     background-image: url(img/tlo640.jpg);
+    display: flex;
 }
 
 header {
@@ -19,30 +49,34 @@ header p {
     line-height: 15vh;
     text-align: center;
     color: #FF9F1C;
-    font-size: 37px;
+    font-size: 27px;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#form {
+    width: 92%;
+    margin: 30px auto 50px auto;
 }
 
 #ilosc {
     width: 100%;
     border: none;
     height: 10vh;
-    font-size: 9vh;
+    font-size: 6.5vh;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-
+    border-bottom: solid #FF9F1C;
 }
 
 div.rodzaje {
-    margin: 5% auto;
+    margin: 7% auto;
     display: flex;
 }
 
-#form {
-    margin: 30px auto 50px auto;
-}
+
 
 #przycisk {
     display: block;
@@ -53,17 +87,58 @@ div.rodzaje {
     border: none;
     line-height: 10vh;
     cursor: pointer;
+    border-radius: 12px;
+    background-color: #FF9F1C;
+    cursor: pointer;
+}
+
+#przycisk p {
+    color: #14213d;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
 }
 
 div.rodzaje img {
-    height: 7vh;
+    height: 5vh;
+    animation: ruch 2s both infinite;
+}
+
+@keyframes ruch {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    13% {
+        opacity: 0;
+    }
+
+    14% {
+        opacity: 1;
+    }
+
+    86% {
+        opacity: 1;
+    }
+
+    87% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+
+    }
 }
 
 #zjakiej {
     width: 36%;
-    height: 7vh;
-    font-size: 3.5vh;
-    line-height: 7vh;
+    height: 5vh;
+    font-size: 2.5vh;
+    line-height: 5vh;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     margin: 0 auto;
@@ -71,24 +146,236 @@ div.rodzaje img {
 
 #najaka {
     width: 36%;
-    height: 7vh;
+    height: 5vh;
     text-align: center;
-    line-height: 7vh;
+    line-height: 5vh;
     background-color: rgba(255, 255, 255, 0.7);
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     margin: 0 auto;
 }
 
 div.wynik {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 div.wynik p {
     font-size: 22px;
     text-align: center;
+    color: #ddd;
 }
 
 div.wynik p.zwrot {
-    font-size: 28px;
+    font-size: 43px;
     text-align: center;
+    margin: 1.5vh 0;
+    color: #FF9F1C;
+    font-weight: 700;
+}
+
+div.wynik p+p+p {
+    font-size: 18px;
+    text-align: center;
+    color: #ddd;
+}
+
+div.wynik p.kurs {
+    font-size: 20px;
+    color: #FF9F1C;
+    text-align: center;
+}
+
+@media (min-width:360px) {
+    header p {
+
+        font-size: 27px;
+
+    }
+}
+
+@media (min-width:375px) {
+    header {
+
+        height: 11vh;
+
+    }
+
+    header p {
+        line-height: 11vh;
+        font-size: 30px;
+
+    }
+
+    #ilosc {
+        height: 6vh;
+        font-size: 5vh;
+
+    }
+
+    #przycisk {
+        height: 6vh;
+    }
+
+    #przycisk p {
+        line-height: 6vh;
+    }
+}
+
+@media (min-width:411px) {
+    header p {
+
+        font-size: 30px;
+
+    }
+
+    #ilosc {
+
+        font-size: 6vh;
+
+    }
+}
+
+@media (min-width:768px) {
+    header p {
+
+        font-size: 54px;
+
+    }
+
+    div.wynik p {
+        font-size: 25px;
+
+    }
+
+    div.wynik p.zwrot {
+        font-size: 63px;
+
+    }
+
+    div.wynik p+p+p {
+        font-size: 22px;
+
+    }
+
+    div.wynik p.kurs {
+        font-size: 20px;
+
+    }
+}
+
+@media (min-width:1024px) {
+    header {
+        margin: 5% 0;
+        height: 8vh;
+    }
+
+    header p {
+        line-height: 8vh;
+        font-size: 77px;
+
+
+    }
+
+    #ilosc {}
+
+    div.rodzaje {
+        margin: 7% auto;
+
+    }
+
+    div.wynik p {
+        font-size: 25px;
+
+    }
+
+    div.wynik p.zwrot {
+        font-size: 63px;
+
+    }
+
+    div.wynik p+p+p {
+        font-size: 22px;
+
+    }
+
+    div.wynik p.kurs {
+        font-size: 20px;
+
+    }
+}
+
+@media (min-width:1120px) and (min-height:625px) {
+    header {
+        margin: 2% 0;
+        height: 12vh;
+    }
+
+    header p {
+        line-height: 12vh;
+        font-size: 47px;
+
+
+    }
+
+
+}
+
+@media (min-width:1420px) {
+    header {
+        margin: 6% 0;
+        height: 12vh;
+    }
+
+    header p {
+        line-height: 12vh;
+        font-size: 87px;
+
+
+    }
+
+    div.wynik p {
+        font-size: 25px;
+
+    }
+
+    div.wynik p.zwrot {
+        font-size: 63px;
+
+    }
+
+    div.wynik p+p+p {
+        font-size: 22px;
+
+    }
+
+    div.wynik p.kurs {
+        font-size: 20px;
+
+    }
+
+    #ilosc {
+        width: 100%;
+        border: none;
+        height: 7vh;
+        font-size: 5vh;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        border-bottom: solid #FF9F1C;
+    }
+
+
+    #przycisk {
+        height: 11vh;
+    }
+
+    #przycisk p {
+        line-height: 11vh;
+        font-size: 38px;
+    }
+
+    div.rodzaje {
+        margin: 4% auto;
+        display: flex;
+    }
 }

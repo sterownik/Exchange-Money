@@ -5,67 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange Money</title>
+    <link rel="icon" href="img/ikona22.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <p>Exchange money</p>
-    </header>
-    <form id="form" onsubmit="return false;">
-        <input placeholder="Ile przeliczyć?" type="number" id="ilosc" />
-        <div class="rodzaje">
+    <div class="reklama"></div>
+    <div class="wrapper">
+        <header>
+            <p>Exchange money</p>
+        </header>
+        <form id="form" onsubmit="return false;">
+            <input placeholder="How much to count?" type="number" id="ilosc" />
+            <div class="rodzaje">
 
-            <input maxlength="3" placeholder="PLN,EUR..." type="text" list="typy" name="zjakiej" id="zjakiej">
-            <img src="img/arrow.png" alt="">
+                <input maxlength="3" placeholder="PLN,EUR..." type="text" list="typy" name="zjakiej" id="zjakiej">
+                <img src="img/arrow.png" alt="">
 
-            <input maxlength="3" placeholder="PLN,EUR..." type="text" list="typy" name="najaka" id="najaka">
-            <datalist id="typy">
-                <option value="CAD">
-                <option value="HKD">
-                <option value="ISK">
-                <option value="PHP">
-                <option value="DKK">
-                <option value="HUF">
-                <option value="CZK">
-                <option value="GBP">
-                <option value="RON">
-                <option value="SEK">
-                <option value="IDR">
-                <option value="INR">
-                <option value="BRL">
-                <option value="RUB">
-                <option value="HRK">
-                <option value="JPY">
-                <option value="THB">
-                <option value="CHF">
-                <option value="EUR">
-                <option value="MYR">
-                <option value="BGN">
-                <option value="TRY">
-                <option value="CNY">
-                <option value="NZD">
-                <option value="ZAR">
-                <option value="USD">
-                <option value="MXN">
-                <option value="SGD">
-                <option value="AUD">
-                <option value="ILS">
-                <option value="KRW">
-                <option value="PLN">
-            </datalist>
+                <input maxlength="3" placeholder="PLN,EUR..." type="text" list="typy" name="najaka" id="najaka">
+                <datalist id="typy">
+                    <option value="CAD">
+                    <option value="HKD">
+                    <option value="ISK">
+                    <option value="PHP">
+                    <option value="DKK">
+                    <option value="HUF">
+                    <option value="CZK">
+                    <option value="GBP">
+                    <option value="RON">
+                    <option value="SEK">
+                    <option value="IDR">
+                    <option value="INR">
+                    <option value="BRL">
+                    <option value="RUB">
+                    <option value="HRK">
+                    <option value="JPY">
+                    <option value="THB">
+                    <option value="CHF">
+                    <option value="EUR">
+                    <option value="MYR">
+                    <option value="BGN">
+                    <option value="TRY">
+                    <option value="CNY">
+                    <option value="NZD">
+                    <option value="ZAR">
+                    <option value="USD">
+                    <option value="MXN">
+                    <option value="SGD">
+                    <option value="AUD">
+                    <option value="ILS">
+                    <option value="KRW">
+                    <option value="PLN">
+                </datalist>
+            </div>
+            <div onclick="othername();" id="przycisk">
+                <p>calculate</p>
+            </div>
+
+
+        </form>
+        <div class="wynik">
+            <p>You will receive:</p>
+            <p class="zwrot">...</p>
+            <p>Calculated from the course:</p>
+            <p class="kurs">...</p>
         </div>
-        <input id="przycisk" onclick="othername();" value="Oblicz" type="submit" />
 
-    </form>
-    <div class="wynik">
-        <p>Otrzymasz:</p>
-        <p class="zwrot">...</p>
-        <p>Przeliczone z kursu:</p>
-        <p class="kurs">...</p>
+        <script src="script.js"></script>
     </div>
-
-    <script src="script.js"></script>
+    <div class="reklama reklama2"></div>
 </body>
 
 </html>
