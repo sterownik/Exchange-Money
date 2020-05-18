@@ -208,6 +208,14 @@ div.wynik p.kurs {
 
     }
 
+    div.rodzaje {
+        margin-top: 16vh;
+    }
+
+    div.wynik {
+        margin-top: 14vh;
+    }
+
     #ilosc {
         height: 6vh;
         font-size: 5vh;
@@ -216,6 +224,7 @@ div.wynik p.kurs {
 
     #przycisk {
         height: 6vh;
+        margin-top: 10vh;
     }
 
     #przycisk p {
@@ -228,6 +237,18 @@ div.wynik p.kurs {
 
         font-size: 30px;
 
+    }
+
+    div.rodzaje {
+        margin-top: 16vh;
+    }
+
+    #przycisk {
+        margin-top: 10vh;
+    }
+
+    div.wynik {
+        margin-top: 14vh;
     }
 
     #ilosc {
@@ -267,7 +288,7 @@ div.wynik p.kurs {
 
 @media (min-width:1024px) {
     header {
-        margin: 5% 0;
+        margin: 4% 0;
         height: 10vh;
     }
 
@@ -337,7 +358,7 @@ div.wynik p.kurs {
 
 @media (min-width:1120px) and (min-height:625px) {
     header {
-        margin: 2% 0;
+        margin: 1% 0;
         height: 12vh;
     }
 
@@ -382,7 +403,7 @@ div.wynik p.kurs {
 
 @media (min-width:1420px) {
     header {
-        margin: 6% 0;
+        margin: 4% 0;
         height: 12vh;
     }
 
