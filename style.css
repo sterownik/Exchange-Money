@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 div.wrapper {
     overflow: hidden;
     flex-basis: 90%;
@@ -14,15 +19,23 @@ div.wrapper {
 div.reklama {
     flex-basis: 10%;
     overflow: hidden;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: rgba(255, 255, 255, 0.7);
     background-image: url(img/reklama.png);
-    background-size: contain;
+    height: 500%;
+
+    animation: reklamaruch 5s linear infinite;
+}
+
+@keyframes reklamaruch {
+    100% {
+        transform: translateY(-546px);
+    }
 }
 
 div.reklama {
     flex-basis: 10%;
-    height: 100vh;
+    height: 500vh;
     background-color: rgba(255, 255, 255, 0.7);
     background-image: url(img/reklama.png);
     background-size: contain;
@@ -31,7 +44,14 @@ div.reklama {
 div.reklama2 {
     background-position: center;
     background-image: url(img/reklama2.png);
+    animation: reklamaruch 5s linear infinite reverse;
 
+}
+
+@keyframes reklamaruch2 {
+    100% {
+        transform: translateY(546px);
+    }
 }
 
 body {
