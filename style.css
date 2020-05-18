@@ -5,7 +5,7 @@
 }
 
 div.wrapper {
-
+    overflow: hidden;
     flex-basis: 90%;
     margin: 0 auto;
     height: 100vh;
