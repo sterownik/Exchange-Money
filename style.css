@@ -5,9 +5,10 @@
 }
 
 body {
-    height: 100vh;
     overflow: hidden;
 }
+
+
 
 div.wrapper {
     overflow: hidden;
@@ -22,7 +23,7 @@ div.reklama {
     /* height: 100vh; */
     background-color: rgba(255, 255, 255, 0.7);
     background-image: url(img/reklama.png);
-    height: 500%;
+    /* height: 500%; */
 
     animation: reklamaruch 5s linear infinite;
 }

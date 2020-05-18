@@ -10,6 +10,9 @@ var procent2;
 var procent3;
 var pobranie;
 var kiedypobrane;
+window.onscroll = function () {
+    window.scrollTo(0, 0);
+};
 
 
 function othername() {
